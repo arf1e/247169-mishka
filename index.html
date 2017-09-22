@@ -5,5 +5,91 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a href="#" class="page-header-logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="form.html" class="site-list__link">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--search"><a href="#" class="site-list__link">Поиск по сайту</a></li>
+          <li class="site-list__item site-list__item--cart"><a href="#" class="site-list__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+     <section class="promo">
+        <h1 class="promo__heading">Милые штуки ручной работы для дома</h1>
+        <ul class="promo__list categories">
+          <li class="categories__category categories__category--interier">Предметы интерьера</li>
+          <li class="categories__category categories__category--toys">Детские игрушки</li>
+        </ul>
+      </section>
+      <section class="featured">
+        <h2 class="visually-hidden">Интересные товары:</h2>
+        <aricle class="top-good">
+          <h3 class="top-good__name">Вязаные корзинки</h3>
+          <span class="top-good__status">Товар недели</span>
+          <p class="top-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <ul class="top-good__info">
+              <li class="top-good__feature">Цвет: <span class="top-good__value">«Тиффани»/серый</span></li>
+              <li class="top-good__feature">Диаметр: <span class="top-good__value">25 см</span></li>
+              <li class="top-good__feature">Высота: <span clas="top-good__value">15 см</span></li>
+          </ul>
+          <img class="good__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+          <strong class="good__price">Цена: 990 руб.</strong>
+          <a href="#" class="btn">Заказать</a>
+        </aricle>
+      </section>
+      <section class="about">
+        <h3 class="about__heading">Коротко о нас:</h3>
+        <ul class="about__list advantages-list">
+          <li class="advantages-list__advantage advantages-list__advantage--ecology">Экологически чистые материалы</li>
+          <li class="advantages-list__advantage advantages-list__advantage--cheap">Скандинавский стиль по российской цене</li>
+          <li class="advantages-list__advantage advantages-list__advantage--likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages-list__advantage advantages-list__advantage--handmade">Связано вручную с любовью и умилением</li>
+          <li class="advantages-list__advantage advantages-list__advantage--local">Поддержка отечественного производителя</li>
+          <li class="advantages-list__advantage advantages-list__advantage--presentable">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="responds">
+        <h3 class="responds__heading">Отзывы</h3>
+        <blockquote class="respond">
+          <p class="respond__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="respond__info">
+            <strong class="respond__author">Анастасия Красильникова</strong>
+            <span class="respond__author-contacts">@misssssiskras</span>
+          </div>
+        </blockquote>
+        <div class="responds__controls">
+          <a href="#" class="responds__control-btn responds__control-btn--prev">Туда</a>
+          <a href="#" class="responds__control-btn responds__control-btn--next">Сюда</a>
+        </div>
+        <a href="#" class="responds__write btn">Написать</a>
+      </section>
+      <section class="contacts">
+       <h3 class="contacts__heading">Контакты</h3>
+        <span class="contacts__info">e-mail</span>
+        <a href="mailto://info@mimimishkashop.ru" class="contacts__info contacts-info--email">info@mimimishkashop.ru</a>
+        <span class="contacts__info">адрес:</span>
+        <span class="contacts__info contacts__info--address">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
+        <div class="map">
+          <img class="map__image" src="http://placehold.it/320x457" alt="Карта" width="320" height="457">
+        </div>
+        <a href="#" class="btn">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--instagram"><a href="#" class="page-footer__social-link">инста</a></li>
+        <li class="social__item social__item--fb"><a href="#" class="page-footer__social-link">фб</a></li>
+        <li class="social__item social__item--twitter"><a href="#" class="page-footer__social-link">твитор</a></li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <span class="developer__studio">Разработано</span>
+        <img class="developer__logo" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка | Форма заказа</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header-logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--current">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--search"><a href="#" class="site-list__link">Поиск по сайту</a></li>
+          <li class="site-list__item site-list__item--cart"><a href="#" class="site-list__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+      <section class="description">
+        <h1 class="description__heading">Вязание на заказ</h1>
+      </section>
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Тип</legend>
+          <input class="order-form__radio" type="radio" name="type" value="accessory" id="accessory" checked>
+          <label class="order-form__label" for="accessory">Аксессуар для интерьера</label>
+          <input class="order-form__radio" type="radio" name="type" value="toy" id="toy">
+          <label class="order-form__label" for="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Цвет</legend>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="white" value="white" checked>
+          <label for="" class="order-form__label">Белый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="gray" value="gray" checked>
+          <label for="" class="order-form__label">Серый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="tiffany" value="tiffany">
+          <label for="" class="order-form__label">«Тиффани»</label>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="black" value="black">
+          <label for="" class="order-form__label">Черный</label>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="pink" value="pink">
+          <label for="" class="order-form__label">Розовый</label>
+          <input class="order-form__checkbox" type="checkbox" name="color" id="orange" value="orange">
+          <label for="" class="order-form__label">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">ФИО</legend>
+          <label for="name" class="order-form__label">Имя:</label>
+          <input class="order-form__text" type="text"  name="name" id="name" placeholder="Введите ваше имя*" required>
+          <label for="surname" class="order-form__label">Фамилия:</label>
+          <input class="order-form__text" type="text"  name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          <label for="lastname" class="order-form__label">Отчество:</label>
+          <input class="order-form__text" type="text"  id="lastname" name="lastname" placeholder="Отчетство, если желаете">
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">ТЕЛ</legend>
+          <input type="text" class="order-form__text order-form__text-phone" name="phone" placeholder="+7 XXX XX XX*" required>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">E-MAIL</legend>
+          <input type="email" class="order-form__text order-form__text-email" name="email" id="email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">ДОП</legend>
+          <textarea class="order-form__textarea" name="info" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <span class="order-form__required-note">*Поля обязательны для заполнения</span>
+        <input type="submit" class="btn" value="Отправить заказ">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--instagram"><a href="#" class="page-footer__social-link">инста</a></li>
+        <li class="social__item social__item--fb"><a href="#" class="page-footer__social-link">фб</a></li>
+        <li class="social__item social__item--twitter"><a href="#" class="page-footer__social-link">твитор</a></li>
+      </ul>
+      <div class="page-footer__developer developer">
+        <span class="developer__studio">Разработано</span>
+        <img class="developer__logo" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+      </div>
+    </footer>
+  </body>
+</html>
