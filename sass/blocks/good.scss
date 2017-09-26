@@ -1,0 +1,27 @@
+.good__description {
+  border: 1px solid #ececec;
+  padding: 25px;
+}
+
+.good__name {
+  margin-top: 0;
+  font-size: $content-fs;
+  line-height: 24px;
+}
+
+.good__info {
+  font-size: 13px;
+  line-height: 30px;
+  color: $content-color;
+}
+
+.good__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.good__proceed {
+  border-top: 1px solid #ececec;
+}

@@ -1,0 +1,12 @@
+.fieldset {
+  border-color: $emphase-color;
+}
+
+.fieldset__legend {
+  font-size: $content-fs;
+  line-height: 16px;
+  color: $emphase-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка | Форма заказа</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -26,6 +27,7 @@
         <h1 class="description__heading">Вязание на заказ</h1>
       </section>
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="fieldset">
           <legend class="fieldset__legend">Тип</legend>
           <div class="radio">
@@ -102,14 +104,16 @@
       </form>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--instagram"><a href="#" class="page-footer__social-link">инста</a></li>
-        <li class="social__item social__item--fb"><a href="#" class="page-footer__social-link">фб</a></li>
-        <li class="social__item social__item--twitter"><a href="#" class="page-footer__social-link">твитор</a></li>
-      </ul>
-      <div class="page-footer__developer developer">
-        <span class="developer__studio">Разработано</span>
-        <img class="developer__logo" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+      <div class="wrap">
+        <ul class="page-footer__social social">
+          <li class="social__item social__item--instagram"><a href="#" class="page-footer__social-link">инста</a></li>
+          <li class="social__item social__item--fb"><a href="#" class="page-footer__social-link">фб</a></li>
+          <li class="social__item social__item--twitter"><a href="#" class="page-footer__social-link">твитор</a></li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <span class="developer__studio">Разработано</span>
+          <img class="developer__logo" src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy">
+        </div>
       </div>
     </footer>
   </body>

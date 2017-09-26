@@ -1,0 +1,32 @@
+.top-good {
+  color: $content-color;
+}
+
+.top-good__name {
+  font-size: $heading-fs;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.top-good__status {
+  color: $emphase-color;
+  font-size: $content-fs;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.top-good__description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.top-good__info {
+  list-style: none;
+  padding: 0;
+}
+
+.top-good__price {
+  font-size: $content-fs;
+  line-height: 24px;
+}
