@@ -8,12 +8,10 @@
 
 .categories__category {
   background-repeat: no-repeat;
-  
   &--interier {
     background-color: $emphase-color;
     background-image: url("../../img/icon-interior.svg");
   }
-  
   &--toys {
     background-color: $emphase-secondary-color;
     background-image: url("../../img/icon-toy.svg");
