@@ -31,13 +31,13 @@
 @font-face {
   font-family: "Open Sans", sans-serif;
   src: url("../fonts/opensans.woff2")
-                      format("woff2"),
+    format("woff2"),
     url("../fonts/opensansbold.woff2")
-                        format("woff2"),
-        url("../fonts/opensans.woff")
-                        format("woff"),
+    format("woff2"),
+    url("../fonts/opensans.woff")
+    format("woff"),
     url("../fonts/opensansbold.woff")
-                      format("woff");
+    format("woff");
 }
 /* Глобальные стили */
 html {
