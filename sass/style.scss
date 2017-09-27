@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import "blocks/page-header.scss";
+@import "font.scss";
 @import "blocks/about.scss";
 @import "blocks/btn.scss";
 @import "blocks/categories.scss";
@@ -28,18 +28,8 @@
 @import "blocks/top-good.scss";
 @import "blocks/wrap.scss";
 
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("../fonts/opensans.woff2")
-    format("woff2"),
-    url("../fonts/opensansbold.woff2")
-    format("woff2"),
-    url("../fonts/opensans.woff")
-    format("woff"),
-    url("../fonts/opensansbold.woff")
-    format("woff");
-}
 /* Глобальные стили */
+
 html {
   font-family: "Open Sans", "Arial", sans-serif;
 }
