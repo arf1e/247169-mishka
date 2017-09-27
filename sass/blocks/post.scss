@@ -1,0 +1,17 @@
+.post {
+  border: 1px solid #ededed;
+}
+
+.post__heading {
+  padding: 25px;
+  margin: 0;
+  font-size: $content-fs;
+  line-height: 24px;
+}
+
+.post__content {
+  padding: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $content-color;
+}

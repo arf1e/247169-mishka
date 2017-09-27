@@ -1,0 +1,8 @@
+.textarea__input {
+  font-size: $content-fs;
+  line-height: 18px;
+}
+
+.textarea__input::placeholder {
+  color: #d2d2d2;
+}

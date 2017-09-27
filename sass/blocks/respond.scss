@@ -1,0 +1,21 @@
+.respond {
+  margin-left: 0;
+}
+
+.respond__text {
+  color: $content-color;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.respond__author {
+  font-size: $content-fs;
+  line-height: 24px;
+}
+
+.respond__author-contacts {
+  font-size: $content-fs;
+  line-height: 30px;
+  color: $content-color;
+  display: block;
+}
