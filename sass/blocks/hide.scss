@@ -1,0 +1,9 @@
+.hide {
+  display: none;
+}
+
+@meta (min-width: $tablet-width) {
+  .hide {
+    display: flex;
+  }
+}

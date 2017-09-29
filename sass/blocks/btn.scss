@@ -5,4 +5,11 @@
   text-transform: uppercase;
   line-height: 20px;
   border: 2px solid $content-color;
+  text-align: center;
+  width: 256px;
+}
+
+.btn--modal {
+  margin: 0 auto;
+  display: block;
 }

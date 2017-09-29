@@ -1,0 +1,13 @@
+.logo {
+  margin-left: 115px;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    margin-left: 0;
+    display: flex;
+    flex-basis: 320px;
+    justify-content: flex-start;
+  }
+}
