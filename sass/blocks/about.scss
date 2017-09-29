@@ -13,3 +13,61 @@
   font-size: $heading-fs;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__heading {
+    font-size: $page-heading-tablet-fs;
+    line-height: 50px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .about__advantage {
+    display: flex;
+    font-size: 20px;
+    line-height: 22px;
+    min-height: 95px;
+    width: 334px;
+    align-items: flex-end;
+    margin-bottom: 65px;
+  }
+
+  /* Порядок следования : */
+
+  .about__advantage--ecology {
+    order: 1;
+  }
+
+  .about__advantage--handmade {
+    order: 2;
+  }
+
+  .about__advantage--cheap {
+    order: 3;
+  }
+
+  .about__advantage--local {
+    order: 4;
+  }
+
+  .about__advantage--likes {
+    order: 5;
+  }
+
+  .about__advantage--presentable {
+    order: 6;
+  }
+
+
+}

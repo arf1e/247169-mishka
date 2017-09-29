@@ -6,10 +6,18 @@
   line-height: 20px;
   border: 2px solid $content-color;
   text-align: center;
-  width: 256px;
 }
 
 .btn--modal {
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

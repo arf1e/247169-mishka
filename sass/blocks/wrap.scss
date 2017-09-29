@@ -10,3 +10,10 @@
     padding: 0 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrap {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
