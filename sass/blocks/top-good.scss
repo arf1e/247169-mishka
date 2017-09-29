@@ -35,7 +35,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  
   .top-good {
     padding-top: 66px;
     padding-bottom: 70px;
@@ -43,11 +42,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   .top-good__name {
     font-size: $page-heading-tablet-fs;
   }
-  
+
   .top-good__status {
     margin-bottom: 55px;
     display: inline-flex;
@@ -56,25 +55,25 @@
     align-self: flex-end;
     margin-right: 40px;
   }
-  
+
   .top-good__brief {
     width: 290px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .top-good__description {
     line-height: 30px;
     margin: 0;
     display: block;
     width: 290px;
   }
-  
+
   .top-good__picture {
     width: 333px;
   }
-  
+
   .top-good__info {
     display: flex;
     flex-direction: row;
@@ -82,7 +81,7 @@
     justify-content: space-between;
     width: 230px;
   }
-  
+
   .top-good__feature {
     flex-basis: 100%;
     display: flex;
