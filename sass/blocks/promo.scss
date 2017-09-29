@@ -17,6 +17,9 @@
 
 @media (min-width: $tablet-width) {
   .promo__heading {
+    font-size: $page-heading-tablet-fs;
+    line-height: 50px;
+    margin-top: 80px;
     margin-bottom: 370px;
     width: 500px;
   }

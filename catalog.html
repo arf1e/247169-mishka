@@ -8,20 +8,26 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <a href="index.html" class="logo">
-          <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
-        </a>
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__container">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current">Каталог товаров</a></li>
-            <li class="main-nav__list-item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
-            <li class="main-nav__list-item main-nav__list-item--search"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
-            <li class="main-nav__list-item main-nav__list-item--cart"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
-          </ul>
+      <div class="page-header__inner">
+        <div class="page-header__top">
+          <a href="index.html" class="logo">
+            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">-</button>
+            <div class="main-nav__container hide">
+              <ul class="main-nav__list main-nav__list--navigation">
+                <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current">Каталог товаров</a></li>
+                <li class="main-nav__list-item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--user-block">
+                <li class="main-nav__list-item main-nav__list-item--search"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+                <li class="main-nav__list-item main-nav__list-item--cart"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main class="page-content">
       <div class="wrap">
@@ -84,5 +90,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

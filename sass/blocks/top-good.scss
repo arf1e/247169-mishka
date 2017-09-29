@@ -12,6 +12,7 @@
 .top-good__status {
   color: $emphase-color;
   font-size: $content-fs;
+  line-height: 17px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -24,9 +25,68 @@
 .top-good__info {
   list-style: none;
   padding: 0;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .top-good__price {
   font-size: $content-fs;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  
+  .top-good {
+    padding-top: 66px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .top-good__name {
+    font-size: $page-heading-tablet-fs;
+  }
+  
+  .top-good__status {
+    margin-bottom: 55px;
+    display: inline-flex;
+    width: 55px;
+    text-align: center;
+    align-self: flex-end;
+    margin-right: 40px;
+  }
+  
+  .top-good__brief {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .top-good__description {
+    line-height: 30px;
+    margin: 0;
+    display: block;
+    width: 290px;
+  }
+  
+  .top-good__picture {
+    width: 334px;
+  }
+  
+  .top-good__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 230px;
+  }
+  
+  .top-good__feature {
+    flex-basis: 100%;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+  }
 }

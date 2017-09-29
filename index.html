@@ -14,8 +14,8 @@
             <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
           </a>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">-</button>
-            <div class="main-nav__container">
+            <button class="main-nav__toggle" type="button">+</button>
+            <div class="main-nav__container hide">
               <ul class="main-nav__list main-nav__list--navigation">
                 <li class="main-nav__list-item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
                 <li class="main-nav__list-item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
@@ -27,6 +27,7 @@
             </div>
            </nav>
          </div>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
        </div>
     </header>
     <main class="page-content">
@@ -41,15 +42,17 @@
           <aricle class="top-good">
             <h3 class="top-good__name">Вязаные корзинки</h3>
             <span class="top-good__status">Товар недели</span>
-            <p class="top-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <ul class="top-good__info">
-                <li class="top-good__feature">Цвет: <span class="top-good__value">«Тиффани»/серый</span></li>
-                <li class="top-good__feature">Диаметр: <span class="top-good__value">25 см</span></li>
-                <li class="top-good__feature">Высота: <span clas="top-good__value">15 см</span></li>
-            </ul>
+            <div class="top-good__brief">
+              <p class="top-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <ul class="top-good__info">
+                <li class="top-good__feature"> Цвет: <span class="top-good__value">«Тиффани»/серый</span></li>
+                  <li class="top-good__feature">Диаметр: <span class="top-good__value">25 см</span></li>
+                  <li class="top-good__feature">Высота: <span class="top-good__value">15 см</span></li>
+              </ul>
+              <strong class="top-good__price">Цена: 990 руб.</strong>
+              <a href="#" class="btn">Заказать</a>
+            </div>
             <img class="top-good__picture" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-            <strong class="top-good__price">Цена: 990 руб.</strong>
-            <a href="#" class="btn">Заказать</a>
           </aricle>
         </section>
         <section class="about wrap">
@@ -86,9 +89,8 @@
           <span class="contacts__info contacts__info--address">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
         </section>
         <div class="map">
-          <img class="map__image" src="http://placehold.it/320x457" alt="Карта" width="320" height="457">
+          <a href="#" class="btn btn--modal">Напишите нам</a>
         </div>
-        <a href="#" class="btn btn--modal">Напишите нам</a>
     </main>
     <footer class="page-footer">
       <div class="wrap">
