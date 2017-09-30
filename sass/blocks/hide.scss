@@ -2,7 +2,7 @@
   display: none;
 }
 
-@meta (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .hide {
     display: flex;
   }
