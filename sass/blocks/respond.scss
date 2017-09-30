@@ -1,16 +1,23 @@
 .respond {
   margin-left: 0;
+  width: 100%;
 }
 
 .respond__text {
   color: $content-color;
   font-size: 15px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .respond__author {
   font-size: $content-fs;
   line-height: 24px;
+}
+
+.respond__info {
+  margin-bottom: 30px;
 }
 
 .respond__author-contacts {

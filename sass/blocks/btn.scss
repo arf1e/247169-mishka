@@ -18,7 +18,8 @@
 }
 
 .btn--modal {
-  margin: 0 auto;
+  margin: 40px auto;
+  min-width: 260px;
 }
 
 @media (min-width: $tablet-width) {

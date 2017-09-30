@@ -1,11 +1,29 @@
 .responds__heading {
   font-size: $heading-fs;
+  margin-bottom: 4px;
 }
 
 .responds {
   width: 260px;
   padding: 0 30px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.responds__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+
+.responds__control-btn {
+  height: 50px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
