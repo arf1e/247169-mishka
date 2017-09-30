@@ -6,11 +6,19 @@
   line-height: 20px;
   border: 2px solid $content-color;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: $content-color;
+  color: white;
 }
 
 .btn--modal {
   margin: 0 auto;
-  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,5 +27,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .btn--modal {
+    margin: 55px auto;
+    min-width: 226px;
+    font-size: $content-fs;
+  }
+
+  .btn--new-respond {
+    order: 2;
   }
 }

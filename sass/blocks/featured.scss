@@ -1,0 +1,12 @@
+.featured {
+  padding: 20px 30px 42px 30px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .featured {
+    width: 668px;
+    padding: 0 50px;
+  }
+}

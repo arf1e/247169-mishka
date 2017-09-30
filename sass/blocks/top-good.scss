@@ -1,5 +1,7 @@
 .top-good {
   color: $content-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-good__name {
@@ -15,6 +17,7 @@
   line-height: 17px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .top-good__description {
@@ -27,20 +30,46 @@
   padding: 0;
   font-size: 15px;
   line-height: 20px;
+  margin-bottom: 28px;
+}
+
+.top-good__feature {
+  height: 39px;
+}
+
+.top-good__key {
+  width: 100px;
+  border-bottom: 1px solid #ececec;
+}
+
+.top-good__value {
+  border-bottom: 1px solid #ececec;
+}
+
+.top-good__picture {
+  margin-bottom: 30px;
+}
+
+.top-good__proceed {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-good__price {
   font-size: $content-fs;
   line-height: 24px;
+  align-self: center;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .top-good {
     padding-top: 55px;
     padding-bottom: 70px;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .top-good__name {
@@ -73,6 +102,8 @@
 
   .top-good__picture {
     width: 333px;
+    height: 404px;
+    margin: 0;
   }
 
   .top-good__info {
@@ -87,9 +118,7 @@
 
   .top-good__feature {
     flex-basis: 100%;
-    display: flex;
     padding: 11px 0;
-    justify-content: space-between;
   }
 
   .top-good__price {
@@ -100,5 +129,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .top-good__proceed {
+    display: flex;
+    width: 290px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -152px;
   }
 }

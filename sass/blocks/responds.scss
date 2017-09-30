@@ -1,4 +1,46 @@
-
 .responds__heading {
   font-size: $heading-fs;
+}
+
+.responds {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .responds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    padding: 0 50px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    align-items: flex-start;
+    margin-bottom: 85px;
+  }
+
+  .responds__heading {
+    font-size: $page-heading-tablet-fs;
+    line-height: 50px;
+    order: 1;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .responds__write {
+    order: 2;
+    flex-basis: 171px;
+  }
+
+  .responds__controls {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    flex-basis: 170px;
+  }
 }

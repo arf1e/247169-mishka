@@ -19,3 +19,22 @@
   color: $content-color;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .respond {
+    order: 3;
+  }
+
+  .respond__text {
+    font-size: $content-fs;
+    margin-bottom: 40px;
+  }
+
+  .respond__info {
+    order: 4;
+  }
+
+  .respond__author {
+    font-size: 18px;
+  }
+}

@@ -1,3 +1,33 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
+.page-footer__container {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__container {
+    width: 668px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .page-footer__logo {
+  }
+
+  .page-footer__social {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 150px;
+  }
+}

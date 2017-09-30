@@ -3,3 +3,11 @@
   line-height: 18px;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width){
+  .developer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
