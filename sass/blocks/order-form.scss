@@ -1,5 +1,9 @@
 .order-form {
-  padding: 30px;
+  width: 260px;
+  padding: 30px 30px 55px 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__description {
@@ -12,4 +16,43 @@
   font-size: 14px;
   line-height: 16px;
   color: $content-color;
+  margin-bottom: 30px;
+}
+
+.order-form__proceed {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: 668px;
+    padding: 80px 50px 50px 50px;
+  }
+
+  .order-form__description {
+    font-size: $content-fs;
+    line-height: 30px;
+  }
+
+  .order-form__proceed {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .order-form__required-note {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form {
+    width: 1050px;
+    padding: 125px 50px 50px 50px;
+  }
+
+  .order-form__btn {
+    flex-basis: 230px;
+    margin-left: 170px;
+  }
 }

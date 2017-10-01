@@ -1,7 +1,18 @@
-
 .checkbox__label {
   font-size: $content-fs;
   line-height: 18px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    flex-basis: 250px;
+    height: 54px;
+  }
+
+  .checkbox__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }

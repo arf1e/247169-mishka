@@ -1,7 +1,13 @@
-
 .radio__label {
   font-size: $content-fs;
   line-height: 18px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    width: 334px;
+    height: 54px;
+  }
 }

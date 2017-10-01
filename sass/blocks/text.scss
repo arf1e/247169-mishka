@@ -15,3 +15,28 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .text {
+    height: 45px;
+    flex-basis: 501px;
+    display: flex;
+  }
+
+  .text__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .text__input {
+    font-size: 19px;
+    line-height: 18px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text {
+    flex-basis: 700px;
+  }
+}

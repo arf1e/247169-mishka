@@ -1,9 +1,18 @@
 .description {
   background-color: #f1f1f1;
+  padding-top: 70px;
+  padding-bottom: 75px;
 }
 
 .description__heading {
   text-align: center;
   font-size: $page-heading-fs;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .description__heading {
+    font-size: $page-heading-tablet-fs;
+    line-height: 50px;
+  }
 }
