@@ -36,6 +36,7 @@
     display: inline-flex;
     flex-basis: 102px;
   }
+
   .page-footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -61,10 +62,11 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-footer {
     margin-top: 105px;
   }
+
   .page-footer__container {
     width: 1050px;
   }
