@@ -140,14 +140,12 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .top-good {
     width: 825px;
     margin-left: 175px;
     position: relative;
     height: 626px;
     flex-wrap: wrap;
-    background-color: lightcoral;
   }
 
   .top-good__name {
