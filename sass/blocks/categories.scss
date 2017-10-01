@@ -36,3 +36,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories__category {
+    width: 465px;
+  }
+}

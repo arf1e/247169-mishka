@@ -62,3 +62,14 @@
     flex-basis: 170px;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .responds {
+    width: 875px;
+    margin: 0 auto;
+    padding-left: 225px;
+  }
+  .responds__heading {
+    font-size: $page-heading-desktop-fs;
+  }
+}

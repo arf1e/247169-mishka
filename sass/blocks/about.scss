@@ -87,3 +87,18 @@
     order: 6;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .about {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 225px;
+  }
+
+  .about__heading {
+    font-size: $page-heading-desktop-fs;
+    line-height: 57px;
+    padding: 0;
+  }
+}
+

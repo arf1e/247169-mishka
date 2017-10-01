@@ -96,7 +96,6 @@
     font-size: 17px;
     line-height: 30px;
     margin: 0;
-    display: block;
     width: 290px;
   }
 
@@ -139,3 +138,39 @@
     margin-top: -152px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .top-good {
+    width: 825px;
+    margin-left: 175px;
+    position: relative;
+    height: 626px;
+    flex-wrap: wrap;
+    background-color: lightcoral;
+  }
+
+  .top-good__name {
+    font-size: $page-heading-desktop-fs;
+    line-height: 57px;
+  }
+
+  .top-good__status {
+    position: absolute;
+    top: 68px;
+    left: -120px;
+    z-index: 2;
+  }
+
+  .top-good__brief {
+    flex-basis: auto;
+    width: auto;
+  }
+
+  .top-good__proceed {
+    width: auto;
+    margin: 0;
+  }
+}
+
+

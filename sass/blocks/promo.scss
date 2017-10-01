@@ -24,3 +24,13 @@
     width: 500px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__heading {
+    font-size: $page-heading-desktop-fs;
+    line-height: 57px;
+    width: 615px;
+    margin-top: 0;
+    margin-bottom: 361px;
+  }
+}

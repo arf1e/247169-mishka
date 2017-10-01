@@ -60,3 +60,12 @@
     flex-basis: 182px;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 105px;
+  }
+  .page-footer__container {
+    width: 1050px;
+  }
+}

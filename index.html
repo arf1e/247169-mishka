@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="sass/blocks/top-good.scss">
   </head>
   <body>
     <header class="page-header">
@@ -93,19 +94,20 @@
           <a href="#" class="responds__write btn">Написать</a>
         </section>
         <section class="contacts">
-          <h3 class="contacts__heading">Контакты</h3>
-          <div class="contacts__email">
-            <span class="contacts__info">e-mail</span>
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__info contacts__info--email">info@mimimishkashop.ru</a>
+          <div class="contacts__wrap">
+            <h3 class="contacts__heading">Контакты</h3>
+            <div class="contacts__email">
+              <span class="contacts__info">e-mail</span>
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__info contacts__info--email">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__address">
+              <span class="contacts__info">адрес:</span>
+              <span class="contacts__info contacts__info--address">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
+            </div>
           </div>
-          <div class="contacts__address">
-            <span class="contacts__info">адрес:</span>
-            <span class="contacts__info contacts__info--address">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
-          </div>
+          <div class="contacts__map"></div>
+          <a href="#" class="btn contacts__btn">Напишите нам</a>
         </section>
-        <div class="map">
-        </div>
-        <a href="#" class="btn btn--modal">Напишите нам</a>
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
