@@ -1,21 +1,44 @@
 .categories {
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  font-weight: bold;
   list-style: none;
   padding: 0;
 }
 
 .categories__category {
   background-repeat: no-repeat;
+  display: block;
+  width: 260px;
+  padding: 30px;
+  margin: 0 auto;
+  color: #ffffff;
 }
 
 .categories__category--interier {
   background-color: $emphase-color;
-  background-image: url("../../img/icon-interior.svg");
 }
 
 .categories__category--toys {
   background-color: $emphase-secondary-color;
-  background-image: url("../../img/icon-toy.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categories__category {
+    margin: 0;
+    width: 274px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__category {
+    width: 465px;
+  }
 }

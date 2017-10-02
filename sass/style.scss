@@ -7,21 +7,22 @@
 @import "blocks/contacts.scss";
 @import "blocks/description.scss";
 @import "blocks/developer.scss";
-//@import "blocks/featured.scss";
+@import "blocks/featured.scss";
 @import "blocks/fieldset.scss";
 @import "blocks/good.scss";
-//@import "blocks/logo.scss";
+@import "blocks/hide.scss";
+@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/order-form.scss";
-//@import "blocks/page-content.scss";
+@import "blocks/page-content.scss";
 @import "blocks/page-footer.scss";
-//@import "blocks/page-header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/post.scss";
 @import "blocks/promo.scss";
 @import "blocks/radio.scss";
 @import "blocks/respond.scss";
 @import "blocks/responds.scss";
-//@import "blocks/shop.scss";
+@import "blocks/shop.scss";
 @import "blocks/social.scss";
 @import "blocks/text.scss";
 @import "blocks/textarea.scss";
@@ -36,6 +37,8 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  min-width: 320px;
 }
 
 a {

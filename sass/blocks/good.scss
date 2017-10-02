@@ -25,3 +25,28 @@
 .good__proceed {
   border-top: 1px solid #ececec;
 }
+
+@media (min-width: $tablet-width) {
+  .good {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .good__description {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .good {
+    flex-direction: column;
+    flex-basis: 315px;
+    margin-bottom: 55px;
+  }
+
+  .good__pic {
+    align-self: center;
+    width: 100%;
+    flex-basis: 462px;
+  }
+}

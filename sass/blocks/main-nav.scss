@@ -2,18 +2,130 @@
   font-size: $content-fs;
   line-height: 24px;
   font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-nav__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  width: 320px;
 }
 
 .main-nav__list-item {
-  text-align: center;
-  padding: 30px 75px;
+  padding: 30px 60px;
 }
 
 .main-nav__link {
   color: black;
+}
+
+.main-nav__toggle {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.main-nav__list--shop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: transparent;
+    width: 668px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    height: 70px;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-nav__list--shop {
+    display: none;
+  }
+
+  .main-nav__list--user-block {
+    order: 1;
+    justify-content: flex-start;
+  }
+
+  .main-nav__list--navigation {
+    order: 2;
+    width: 323px;
+    justify-content: space-between;
+    padding-top: 5px;
+    background: transparent;
+  }
+
+  .main-nav__list-item--search {
+    width: 83px;
+  }
+
+  .main-nav__list-item {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav__link {
+    margin-top: 10px;
+  }
+
+  .main-nav__link--cart {
+    padding-left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .main-nav__list {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .main-nav__list-item {
+    padding-top: 15px;
+  }
+
+  .main-nav__list--navigation {
+    order: 1;
+    width: 373px;
+  }
+
+  .main-nav__list--user-block {
+    order: 3;
+    justify-content: flex-end;
+  }
+
+  .main-nav__list-item--cart {
+    width: 265px;
+    padding-top: 20px;
+    padding-left: auto;
+  }
+
+  .main-nav__list--shop {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    order: 4;
+    padding-top: 0;
+  }
 }

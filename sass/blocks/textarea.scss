@@ -6,3 +6,12 @@
 .textarea__input::placeholder {
   color: #d2d2d2;
 }
+
+@media (min-width: $tablet-width) {
+  .textarea__input {
+    font-size: 19px;
+    line-height: 18px;
+    border: 2px solid $content-color;
+    width: 501px;
+  }
+}

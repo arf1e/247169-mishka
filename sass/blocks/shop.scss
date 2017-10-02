@@ -1,0 +1,23 @@
+.shop {
+  padding: 30px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .shop {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    padding: 80px 50px 0 50px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shop {
+    width: 1050px;
+    padding: 130px 50px 0 50px;
+    flex-direction: row;
+  }
+}

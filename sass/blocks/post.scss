@@ -1,5 +1,8 @@
 .post {
   border: 1px solid #ededed;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 58px;
 }
 
 .post__heading {
@@ -14,4 +17,37 @@
   font-size: 13px;
   line-height: 24px;
   color: $content-color;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__media {
+    order: 1;
+    height: 455px;
+    background-color: lightgrey;
+    width: 100%;
+  }
+
+  .post__heading {
+    order: 2;
+  }
+
+  .post__content {
+    order: 3;
+  }
+
+  .post__btn {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    width: 1050px;
+  }
 }

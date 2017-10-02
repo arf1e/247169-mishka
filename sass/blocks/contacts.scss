@@ -1,14 +1,140 @@
+.contacts__wrap {
+  padding-top: 85px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 37px;
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__heading {
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .contacts__info {
   font-size: 15px;
   line-height: 30px;
+  flex-basis: 50px;
   color: $content-color;
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts__info--address {
+  flex-basis: 150px;
+  flex-grow: 0;
+  margin-right: 30px;
 }
 
 .contacts__info--email {
   border-bottom: 1px solid $emphase-border-color;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 457px;
+  background-color: lightseagreen;
+}
+
+.contacts__btn {
+  margin: 40px auto;
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrap {
+    flex-direction: row;
+    width: 668px;
+    padding: 0 50px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contacts__heading {
+    font-size: $page-heading-tablet-fs;
+    line-height: 50px;
+    flex-basis: 100%;
+    margin-bottom: 55px;
+  }
+
+  .contacts__email {
+    flex-basis: 285px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-basis: 334px;
+    justify-content: space-between;
+  }
+
+  .contacts__info {
+    flex-basis: 60px;
+  }
+
+  .contacts__info--address {
+    flex-basis: 225px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    width: 875px;
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 225px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contacts__wrap {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__address {
+    margin: 0;
+  }
+
+  .contacts__heading {
+    font-size: $page-heading-desktop-fs;
+    line-height: 57px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__email {
+    margin: 0;
+  }
+
+  .contacts__btn {
+    position: absolute;
+    left: 240px;
+    top: 363px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    margin-left: auto;
+  }
 }

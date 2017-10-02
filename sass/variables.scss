@@ -4,6 +4,11 @@ $page-heading-fs: 27px;
 $heading-fs: 25px;
 $content-fs: 17px;
 
+/* ------ Таблет: */
+$page-heading-tablet-fs: 43px;
+
+/* ------ Десктоп: */
+$page-heading-desktop-fs: 53px;
 
 /* Цвета */
 
@@ -11,3 +16,9 @@ $emphase-color: #63d1bb;
 $emphase-border-color: #62d1ba;
 $emphase-secondary-color: #56c3b2;
 $content-color: #444444;
+
+/* Размеры vp */
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;

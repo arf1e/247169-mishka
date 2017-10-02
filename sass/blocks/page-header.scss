@@ -1,0 +1,48 @@
+.page-header {
+  width: 320px;
+  padding-top: 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__delivery {
+  display: none;
+}
+
+.page-header__inner {
+  position: relative;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 668px;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
+
+  .page-header__delivery {
+    order: 3;
+    background: transparent;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-top: 36px;
+    display: inline-flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .page-header__delivery {
+    order: 5;
+    margin-top: 25px;
+  }
+}

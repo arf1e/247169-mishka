@@ -5,4 +5,34 @@
   text-transform: uppercase;
   line-height: 20px;
   border: 2px solid $content-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: $content-color;
+  color: white;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn--modal {
+    margin: 55px auto;
+    min-width: 226px;
+    font-size: $content-fs;
+  }
+
+  .btn--new-respond {
+    order: 2;
+  }
 }
