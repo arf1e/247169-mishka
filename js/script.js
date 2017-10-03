@@ -23,4 +23,4 @@ button.addEventListener('click', function () {
   // 3. ...Которые будут спозиционированы абсолютно:
   userBlock.classList.toggle('main-nav__list--user-block-js');
   navBlock.classList.toggle('main-nav__list--navigation-js');
-})
+});
