@@ -2,11 +2,15 @@ var button = document.querySelector('.main-nav__toggle');
 var navBlock = document.querySelector('.main-nav__list--navigation');
 var userBlock = document.querySelector('.main-nav__list--user-block');
 var image = document.querySelector('.toggler');
+var header = document.querySelector('.page-header');
 
 /* Если у юзера включен js, нам нужно:
   1. Скрыть меню
   2. При взаимодействии тогглить класс -js
 */
+header.classList.add('page-header--js');
+navBlock.classList.remove('main-nav__list--navigation-nojs');
+userBlock.classList.remove('main-nav__list--user-block-nojs');
 navBlock.classList.add('hide');  // Скрываем меню
 userBlock.classList.add('hide');
 image.classList.remove('toggler--opened');  // Удаляем положение "открыто" у кнопки

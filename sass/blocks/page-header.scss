@@ -2,8 +2,6 @@
   min-width: 320px;
   padding: 0;
   margin: 0;
-  height: 79px;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header__delivery {
@@ -20,10 +18,17 @@
   position: relative;
 }
 
+@media (max-width: $mobile-only-width) {
+  .page-header--js {
+    height: 78px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     min-width: 668px;
-    min-height: 86px;
+    height: 88px;
+    border-bottom: 1px solid #ececec;
   }
 
   .page-header__inner {
@@ -48,12 +53,16 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    min-width: 1150px;
+    height: 86px;
+  }
+
+  .page-header__inner {
     width: 1150px;
-    margin: 0 auto;
   }
 
   .page-header__delivery {
     order: 5;
-    margin-top: 25px;
+    margin-top: 19px;
   }
 }
