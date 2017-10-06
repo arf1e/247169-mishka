@@ -28,6 +28,10 @@
   border: 1px solid #ececec;
 }
 
+.responds__icon--left {
+  transform: rotate(180deg);
+}
+
 @media (min-width: $tablet-width) {
   .responds {
     display: flex;
@@ -41,6 +45,8 @@
     margin: 0 auto;
     align-items: flex-start;
     margin-bottom: 85px;
+    background: url("/../../img/review@1x.jpg") no-repeat;
+    background-position: 0 23px;
   }
 
   .responds__heading {
@@ -67,10 +73,6 @@
   .responds__control-btn {
     width: 87px;
     border: none;
-  }
-
-  .responds__icon--left {
-    transform: rotate(180deg);
   }
 }
 
