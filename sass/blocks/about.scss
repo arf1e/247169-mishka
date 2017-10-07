@@ -61,7 +61,7 @@
   left: 9px;
   width: 32px;
   height: 38px;
-  background-image: url("/../../img/icon-feature-flower.svg"); /* Потом заменю на bg-position */
+  background-image: url("../img/icon-feature-flower.svg"); /* Потом заменю на bg-position */
 }
 
 .about__advantage--handmade::before {
@@ -69,7 +69,7 @@
   left: 4px;
   width: 35px;
   height: 34px;
-  background-image: url("/../../img/icon-feature-ball.svg");
+  background-image: url("../img/icon-feature-ball.svg");
 }
 
 .about__advantage--cheap::before {
@@ -77,7 +77,7 @@
   left: 0;
   width: 47px;
   height: 27px;
-  background-image: url("/../../img/icon-feature-money.svg");
+  background-image: url("../img/icon-feature-money.svg");
 }
 
 .about__advantage--local::before {
@@ -85,7 +85,7 @@
   left: -5px;
   width: 55px;
   height: 23px;
-  background-image: url("/../../img/icon-feature-rocket.svg");
+  background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .about__advantage--likes::before {
@@ -93,7 +93,7 @@
   left: 8px;
   width: 33px;
   height: 27px;
-  background-image: url("/../../img/icon-feature-heart.svg");
+  background-image: url("../img/icon-feature-heart.svg");
 }
 
 .about__advantage--presentable::before {
@@ -101,7 +101,7 @@
   left: 4px;
   width: 33px;
   height: 32px;
-  background-image: url("/../../img/icon-feature-gift.svg");
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
