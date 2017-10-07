@@ -1,6 +1,6 @@
 .order-form {
   width: 260px;
-  padding: 30px 30px 55px 30px;
+  padding: 23px 30px 57px 30px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -10,13 +10,15 @@
   font-size: 13px;
   line-height: 24px;
   color: $content-color;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .order-form__required-note {
   font-size: 14px;
   line-height: 16px;
   color: $content-color;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .order-form__proceed {
@@ -26,33 +28,58 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
-    width: 668px;
-    padding: 80px 50px 50px 50px;
+    width: 100%;
+    padding: 70px 0 22px 0;
   }
 
   .order-form__description {
     font-size: $content-fs;
     line-height: 30px;
+    width: 668px;
+    margin: 0 auto 5px auto;
   }
 
   .order-form__proceed {
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    width: 668px;
+    margin: 0 auto;
+    padding: 17px 0 0 0;
   }
 
   .order-form__required-note {
     order: 1;
+    font-size: $content-fs;
+    line-height: 30px;
+  }
+
+  .order-form__btn {
+    font-size: $content-fs;
+    line-height: 16px;
+    min-width: 228px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order-form {
-    width: 1050px;
-    padding: 125px 50px 50px 50px;
+    width: 100%;
+    padding: 125px 0 28px 0;
+  }
+
+  .order-form__description {
+    width: 700px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .order-form__proceed {
+    width: 700px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 
   .order-form__btn {
     flex-basis: 230px;
-    margin-left: 170px;
   }
 }

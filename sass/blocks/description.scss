@@ -1,7 +1,7 @@
 .description {
   background-color: #f1f1f1;
-  padding-top: 70px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .description__heading {
@@ -11,8 +11,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .description {
+    padding-top: 58px;
+  }
+
   .description__heading {
     font-size: $page-heading-tablet-fs;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .description__heading {
+    font-size: $page-heading-desktop-fs;
+    line-height: 57px;
   }
 }

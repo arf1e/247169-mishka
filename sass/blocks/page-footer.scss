@@ -21,7 +21,7 @@
 .page-footer__developer {
   display: flex;
   justify-content: space-between;
-  margin-top: 0px;
+  margin-top: 0;
   width: 185px;
   align-items: center;
 }
@@ -63,7 +63,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin-top: 105px;
+    padding-top: 40px;
   }
 
   .page-footer__container {

@@ -1,6 +1,18 @@
 .textarea__input {
   font-size: $content-fs;
   line-height: 18px;
+  min-height: 140px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid $content-color;
+  resize: none;
+}
+
+.textarea__input:hover,
+.textarea__input:focus {
+  outline: none;
+  border-color: $emphase-color;
 }
 
 .textarea__input::placeholder {
@@ -13,5 +25,11 @@
     line-height: 18px;
     border: 2px solid $content-color;
     width: 501px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea__input {
+    width: 700px;
   }
 }

@@ -1,7 +1,12 @@
-.fieldset {
+.fieldset__inner {
   border-color: $emphase-color;
-  padding: 15px 0 30px 0;
+  padding: 40px 0 0 0;
   border: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .fieldset__legend {
@@ -10,11 +15,24 @@
   color: $emphase-color;
   text-transform: uppercase;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fieldset--phone {
+  padding-top: 25px;
+}
+
+.fieldset--email {
+  padding-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
-  .fieldset {
-    padding: 50px 0 50px 0;
+  .fieldset__inner {
+    width: 668px;
+    margin: 0 auto;
+    padding: 50px 0 30px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -22,10 +40,12 @@
   }
 
   .fieldset__legend {
+    margin-top: 15px;
     flex-basis: 167px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    position: static;
   }
 
   .fieldset__input {
@@ -33,19 +53,63 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .fieldset--color {
+    background-color: #f1f1f1;
+  }
+
+  .fieldset--phone {
+    background-color: #f1f1f1;
+    padding: 20px 0 0 0;
+  }
+
+  .fieldset__inner--phone {
+    padding: 28px 0 0 0;
+  }
+
+  .fieldset--email {
+    padding: 0 0 10px 0;
+    background-color: #f1f1f1;
+  }
+
+  .fieldset__inner--email {
+    padding: 0 0 20px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .fieldset {
-    margin-left: 60px;
+  .fieldset__inner {
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-left: 175px;
+    width: 875px;
   }
 
   .fieldset__legend {
-    flex-basis: 115px;
+    position: absolute;
+    top: 50px;
+    left: 63px;
+  }
+
+  .fieldset__inner--type {
+    align-content: space-between;
   }
 
   .fieldset__input {
     flex-basis: 750px;
+  }
+
+  .fieldset--phone {
+    padding: 2px 0 0 0;
+  }
+
+  .fieldset__inner--email {
+    padding-top: 0;
+  }
+
+  .fieldset__legend--email {
+    top: 6px;
   }
 }
