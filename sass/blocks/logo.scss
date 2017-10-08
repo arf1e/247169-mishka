@@ -9,18 +9,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
+    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
-    width: 149px;
-    height: 72px;
-    margin-left: -70px;
     order: 2;
-    margin-top: 10px;
     display: flex;
+    margin-left: auto;
     justify-content: center;
     align-items: center;
   }

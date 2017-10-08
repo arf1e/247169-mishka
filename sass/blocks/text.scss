@@ -1,8 +1,14 @@
+.text {
+  margin-bottom: 22px;
+}
+
 .text__input {
   border: none;
   border-bottom: 2px solid black;
   font-size: $content-fs;
   line-height: 18px;
+  padding: 15px 0;
+  width: 100%;
 }
 
 .text__input::placeholder {
@@ -18,20 +24,31 @@
 
 @media (min-width: $tablet-width) {
   .text {
-    height: 45px;
     flex-basis: 501px;
     display: flex;
+    align-items: baseline;
+    margin-bottom: 21px;
   }
 
   .text__label {
     font-size: 19px;
     line-height: 18px;
+    margin-right: 25px;
   }
 
   .text__input {
     font-size: 19px;
     line-height: 18px;
     flex-grow: 1;
+    padding-left: 18px;
+  }
+
+  .text__input--phone {
+    background-color: #f1f1f1;
+  }
+
+  .text__input--email {
+    background-color: #f1f1f1;
   }
 }
 

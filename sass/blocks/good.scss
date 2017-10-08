@@ -1,12 +1,16 @@
-.good__description {
+.good {
   border: 1px solid #ececec;
-  padding: 25px;
+}
+
+.good__description {
+  padding: 23px 27px 29px 27px;
 }
 
 .good__name {
   margin-top: 0;
   font-size: $content-fs;
   line-height: 24px;
+  margin-bottom: 4px;
 }
 
 .good__info {
@@ -24,16 +28,63 @@
 
 .good__proceed {
   border-top: 1px solid #ececec;
+  padding-top: 39px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: $mobile-only-width) {
+  .good:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .good {
     display: flex;
-    margin-bottom: 50px;
+  }
+
+  .good__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .good__info {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: auto;
+  }
+
+  .good__pic {
+    width: 334px;
+    height: 334px;
   }
 
   .good__description {
+    padding: 25px 27px 29px 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-grow: 1;
+  }
+
+  .good__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .good__proceed {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-only-width) {
+  .good:not(:last-child) {
+    margin-bottom: 52px;
   }
 }
 
@@ -41,7 +92,17 @@
   .good {
     flex-direction: column;
     flex-basis: 315px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
+  }
+
+  .good__name {
+    max-width: 240px;
+  }
+
+  .good__proceed {
+    padding-top: 22px;
+    padding-left: 0;
+    margin-top: 12px;
   }
 
   .good__pic {

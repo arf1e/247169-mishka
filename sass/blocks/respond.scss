@@ -8,7 +8,11 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.respond__text br {
+  display: none;
 }
 
 .respond__author {
@@ -25,16 +29,19 @@
   line-height: 30px;
   color: $content-color;
   display: block;
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .respond {
     order: 3;
+    margin: 0;
   }
 
   .respond__text {
     font-size: $content-fs;
-    margin-bottom: 40px;
+    margin-bottom: 58px;
+    width: 100%;
   }
 
   .respond__info {
@@ -43,5 +50,16 @@
 
   .respond__author {
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .respond__text {
+    width: 770px;
+    margin-bottom: 40px;
+
+    & br {
+      display: inline;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .featured {
-  padding: 20px 30px 42px 30px;
+  padding: 30px 30px 42px 30px;
   width: 260px;
   margin: 0 auto;
 }
@@ -14,6 +14,6 @@
 @media (min-width: $desktop-width) {
   .featured {
     width: 1050px;
-    padding: 0 50px;
+    padding: 20px 50px;
   }
 }

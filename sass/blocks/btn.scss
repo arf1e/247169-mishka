@@ -36,3 +36,10 @@
     order: 2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn--proceed {
+    height: 48px;
+    margin-bottom: 0;
+  }
+}
