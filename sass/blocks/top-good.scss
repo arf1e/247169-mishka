@@ -207,8 +207,11 @@
     margin-bottom: 30px;
   }
 
-  .top-good__picture {
+  .top-good__picture-container {
     order: 4;
+  }
+
+  .top-good__picture {
     width: 525px;
     height: 636px;
     background: lightgrey;

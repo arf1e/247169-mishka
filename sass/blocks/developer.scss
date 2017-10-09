@@ -5,6 +5,22 @@
   color: black;
 }
 
+.developer:hover .developer__logo {
+  path {
+    fill: #46c1ae;
+  }
+}
+
+.developer:active {
+  color: #bfbfbf;
+}
+
+.developer__logo {
+  width: 41px;
+  height: 41px;
+  margin-right: -7px;
+}
+
 @media (min-width: $tablet-width) {
   .developer {
     display: flex;
