@@ -4,7 +4,7 @@
 
 .page-footer__container {
   width: 260px;
-  padding: 8px 30px 30px 25px;
+  padding: 6px 30px 30px 28px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -30,10 +30,23 @@
   display: none;
 }
 
+.social__logo:hover {
+  path {
+    fill: #46c1ae;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: inline-flex;
     flex-basis: 102px;
+    margin-bottom: 9px;
+  }
+
+  .page-footer__link:hover .page-footer__logo {
+    path {
+      fill: #46c1ae;
+    }
   }
 
   .page-footer {

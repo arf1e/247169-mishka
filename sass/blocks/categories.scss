@@ -35,6 +35,17 @@
   .categories {
     display: flex;
     justify-content: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -16px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
   }
 
   .categories__category {
@@ -43,6 +54,11 @@
     width: 269px;
     font-size: 20px;
     line-height: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   .categories__category--interior {

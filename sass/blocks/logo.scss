@@ -10,6 +10,12 @@
     justify-content: flex-start;
     align-items: center;
     margin-right: auto;
+    margin-top: 8px;
+  }
+
+  .logo__image {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -17,8 +23,14 @@
   .logo {
     order: 2;
     display: flex;
-    margin-left: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 6px;
+    margin-left: 138px;
+  }
+
+  .logo__image {
+    width: 148px;
+    height: 72px;
   }
 }

@@ -24,14 +24,40 @@
 }
 
 .post__info {
-  padding: 24px 33px 32px 33px;
+  padding: 23px 33px 32px 33px;
 }
 
 .post__content {
-  margin: 0 5px 22px 0;
+  margin: 0 5px 23px 0;
   font-size: 13px;
   line-height: 24px;
   color: $content-color;
+}
+
+.post__media-container {
+  position: relative;
+  max-height: 150px;
+}
+
+.post__media-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 102px;
+  height: 78px;
+  margin-left: -51px;
+  margin-top: -39px;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -43,10 +69,14 @@
   }
 
   .post__media {
-    order: 1;
     height: 455px;
     background-color: lightgrey;
     width: 100%;
+  }
+
+  .post__media-container {
+    order: 1;
+    max-height: 453px;
   }
 
   .post__heading {
@@ -82,12 +112,13 @@
     width: 1050px;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 462px;
-    margin-bottom: 98px;
+    max-height: 452px;
+    margin-bottom: 108px;
   }
 
   .post__media {
     width: 682px;
+    height: 455px;
   }
 
   .post__heading {
@@ -105,6 +136,10 @@
   .post__heading--video::before {
     top: 44px;
     left: 20px;
+  }
+
+  .post__media-container {
+    height: 455px;
   }
 
   .post__content {
