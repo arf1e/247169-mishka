@@ -3,20 +3,26 @@
 }
 
 .good__description {
-  padding: 23px 27px 29px 27px;
+  padding: 22px 27px 29px 27px;
 }
 
 .good__name {
   margin-top: 0;
   font-size: $content-fs;
   line-height: 24px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .good__info {
   font-size: 13px;
   line-height: 30px;
   color: $content-color;
+}
+
+.good__link {
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 
 .good__price {
@@ -48,11 +54,13 @@
 @media (min-width: $tablet-width) {
   .good {
     display: flex;
+    max-height: 334px;
   }
 
   .good__name {
     font-size: 20px;
     line-height: 24px;
+    max-width: 240px;
   }
 
   .good__info {
@@ -87,7 +95,7 @@
   }
 
   .good__picture-container {
-    height: 334px;
+    height: 0;
   }
 }
 
@@ -102,10 +110,15 @@
     flex-direction: column;
     flex-basis: 315px;
     margin-bottom: 57px;
+    max-height: none;
   }
 
-  .good__name {
-    max-width: 240px;
+  .good__description {
+    padding: 20px 27px 29px 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
   .good__proceed {
