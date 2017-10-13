@@ -26,10 +26,14 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #ececec;
-}
 
-.responds__icon--left {
-  transform: rotate(180deg);
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
