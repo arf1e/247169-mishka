@@ -28,3 +28,18 @@ button.addEventListener('click', function () {
   userBlock.classList.toggle('main-nav__list--user-block-js');
   navBlock.classList.toggle('main-nav__list--navigation-js');
 });
+
+// Карта:
+
+function initMap() {
+  var uluru = {lat: 59.9387161, lng: 30.3229502};
+  var map = new google.maps.Map(document.querySelector('.contacts__map'), {
+    zoom: 17,
+    center: uluru
+  });
+  var marker = new google.maps.Marker ({
+    position: uluru,
+    map: map,
+    icon: "../img/icon-map-pin.svg"
+  });
+}
