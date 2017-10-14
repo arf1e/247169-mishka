@@ -1,6 +1,6 @@
 .order-form {
   width: 260px;
-  padding: 23px 30px 57px 30px;
+  padding: 24px 30px 57px 30px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .order-form {
     width: 100%;
-    padding: 70px 0 22px 0;
+    padding: 76px 0 22px 0;
   }
 
   .order-form__description {

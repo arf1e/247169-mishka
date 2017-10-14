@@ -11,11 +11,16 @@
   align-items: center;
   height: 50px;
   background-color: white;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: $content-color;
   color: white;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {

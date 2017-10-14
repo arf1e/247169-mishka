@@ -31,9 +31,7 @@
 }
 
 .social__logo:hover {
-  path {
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,9 +42,7 @@
   }
 
   .page-footer__link:hover .page-footer__logo {
-    path {
-      fill: #46c1ae;
-    }
+    fill: #46c1ae;
   }
 
   .page-footer {

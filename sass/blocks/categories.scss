@@ -8,27 +8,40 @@
 
 .categories__category {
   background-repeat: no-repeat;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 260px;
-  padding-top: 25px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding: 20px 30px 22px 30px;
   margin: 0 auto;
   color: #ffffff;
   letter-spacing: 0;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active .categories__icon {
+    opacity: 0.3;
+  }
 }
 
 .categories__category--interior {
   background-color: $emphase-color;
-  background-image: url("../img/icon-interior.svg");
-  background-position: 244px 22px;
 }
 
 .categories__category--toys {
   background-color: $emphase-secondary-color;
-  background-image: url("../img/icon-toy.svg");
-  background-position: 233px 20px;
+}
+
+.categories__icon {
+  fill: #149080;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.categories__icon--interior {
+  margin-right: 6px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +57,7 @@
       left: 0;
       right: 0;
       height: 34px;
-      background-image: url("../img/bg-zigzag-fill.svg");
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1150px' height='34px' viewBox='0 0 1150 34' enable-background='new 0 0 1150 34' xml:space='preserve'%3E%3Cpath fill='%23FFFFFF' d='M1121.252,0c-14.375,0-14.375,14-28.749,14s-14.374-14-28.748-14s-14.374,14-28.748,14 c-14.375,0-14.375-14-28.75-14c-14.374,0-14.374,14-28.748,14S963.135,0,948.761,0s-14.374,14-28.749,14S905.637,0,891.263,0 s-14.374,14-28.749,14s-14.375-14-28.75-14c-14.371,0-14.371,14-28.743,14c-14.375,0-14.375-14-28.75-14 c-14.372,0-14.372,14-28.744,14c-14.374,0-14.374-14-28.747-14s-14.373,14-28.747,14C675.66,14,675.66,0,661.287,0 c-14.374,0-14.374,14-28.748,14c-14.375,0-14.375-14-28.751-14c-14.374,0-14.374,14-28.748,14S560.666,0,546.292,0 s-14.374,14-28.748,14C503.17,14,503.17,0,488.796,0c-14.375,0-14.375,14-28.75,14C445.67,14,445.67,0,431.293,0 c-14.375,0-14.375,14-28.75,14c-14.375,0-14.375-14-28.751-14c-14.375,0-14.375,14-28.75,14S330.666,0,316.291,0 s-14.375,14-28.751,14c-14.376,0-14.376-14-28.753-14c-14.374,0-14.374,14-28.747,14c-14.375,0-14.375-14-28.75-14 c-14.375,0-14.375,14-28.751,14c-14.377,0-14.377-14-28.754-14c-14.377,0-14.377,14-28.755,14c-14.378,0-14.378-14-28.756-14 S71.896,14,57.518,14C43.139,14,43.139,0,28.759,0S14.38,14,0,14v20h1150V14C1135.626,14,1135.626,0,1121.252,0z'/%3E%3C/svg%3E%0A");
     }
   }
 
@@ -54,19 +67,28 @@
     width: 269px;
     font-size: 20px;
     line-height: 30px;
-    transition: 0.3s;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 
     &:hover {
       transform: translateY(-5px);
     }
-  }
 
-  .categories__category--interior {
-    background-position: 258px 29px;
-  }
+    &:hover .categories__icon {
+      opacity: 0.7;
+    }
 
-  .categories__category--toys {
-    background-position: 240px 32px;
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:active .categories__icon {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -74,13 +96,5 @@
   .categories__category {
     width: 460px;
     padding-top: 30px;
-  }
-
-  .categories__category--interior {
-    background-position: 450px 30px;
-  }
-
-  .categories__category--toys {
-    background-position: 430px 30px;
   }
 }

@@ -18,21 +18,40 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 62px;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
 }
 
-.fieldset--phone {
+.fieldset__legend--email::after {
+  left: 82px;
+  width: 178px;
+}
+
+.fieldset__inner--phone {
   padding-top: 25px;
 }
 
-.fieldset--email {
+.fieldset__inner--email {
   padding-top: 25px;
+}
+
+.fieldset__inner--personal {
+  padding-top: 47px;
 }
 
 @media (min-width: $tablet-width) {
   .fieldset__inner {
     width: 668px;
     margin: 0 auto;
-    padding: 50px 0 30px 0;
+    padding: 51px 0 30px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -40,12 +59,16 @@
   }
 
   .fieldset__legend {
-    margin-top: 15px;
+    margin-top: 20px;
     flex-basis: 167px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     position: static;
+
+    &::after {
+      display: none;
+    }
   }
 
   .fieldset__input {
