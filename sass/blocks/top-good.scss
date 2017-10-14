@@ -154,7 +154,8 @@
     justify-content: flex-start;
     align-items: stretch;
     overflow: visible;
-    max-height: 626px;
+    max-height: 636px;
+    padding-top: 50px;
   }
 
   .top-good__name {
@@ -163,9 +164,9 @@
     max-width: 290px; /* Ширина блока с информацией */
     white-space: nowrap;
     overflow: visible;
-    margin-top: 47px;
+    margin-top: 50px;
     margin-left: -3px;
-    margin-bottom: 58px;
+    margin-bottom: 62px;
     order: 1;
     z-index: 2;
   }
