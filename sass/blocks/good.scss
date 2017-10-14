@@ -1,9 +1,13 @@
 .good {
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .good__description {
-  padding: 22px 27px 29px 27px;
+  padding: 25px 27px 29px 27px;
 }
 
 .good__name {
@@ -39,6 +43,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.good__add-to-cart:hover .good__cart-icon {
+  fill: $emphase-color;
+}
+
+.good__add-to-cart:active .good__cart-icon {
+  opacity: 0.3;
+}
+
+.good__cart-icon {
+  fill: #cccccc;
 }
 
 .good__picture-container {

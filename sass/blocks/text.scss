@@ -6,6 +6,10 @@
   }
 }
 
+.text--personal {
+  margin-bottom: 23px;
+}
+
 .text__input {
   border: none;
   border-bottom: 2px solid black;
@@ -18,10 +22,11 @@
     outline: none;
     border-color: $emphase-color;
   }
-}
 
-.text__input::placeholder {
-  color: #d2d2d2;
+  &::placeholder {
+    color: #d2d2d2;
+    letter-spacing: 0.4px;
+  }
 }
 
 .text__label {

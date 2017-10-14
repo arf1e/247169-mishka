@@ -3,6 +3,10 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .post__heading {
@@ -53,7 +57,6 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
 
   &:hover {
     transform: scale(1.2);
@@ -77,6 +80,7 @@
   .post__media-container {
     order: 1;
     max-height: 453px;
+    display: block;
   }
 
   .post__heading {
@@ -140,7 +144,7 @@
   }
 
   .post__media-container {
-    height: 455px;
+    width: 682px;
   }
 
   .post__content {
