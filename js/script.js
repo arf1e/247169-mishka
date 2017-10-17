@@ -43,3 +43,34 @@ function initMap() {
     icon: "../img/icon-map-pin.svg"
   });
 }
+
+// Попап:
+
+var modal = document.querySelector('.modal'),
+  overlay = document.querySelector('.overlay'),
+  proceedBtn = document.querySelector('.btn--proceed');
+
+function hideModal() {
+  if (overlay.classList.contains('overlay--shown')) {
+    overlay.classList.remove('overlay--shown');
+  }
+  if (modal.classList.contains('modal--shown')) {
+    modal.classList.remove('modal--shown');
+  }
+}
+
+proceedBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  overlay.classList.add('overlay--shown');
+  modal.classList.add('modal--shown');
+});
+
+overlay.addEventListener('click', function () {
+  hideModal();
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    hideModal();
+  }
+});

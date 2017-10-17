@@ -189,7 +189,7 @@
               </table>
             </div>
             <picture class="top-good__picture-container">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
@@ -198,7 +198,7 @@
             </picture>
             <div class="top-good__proceed">
               <strong class="top-good__price">Цена: 990 руб.</strong>
-              <a href="#" class="btn btn--proceed">Заказать</a>
+              <a href="product.html" class="btn btn--proceed">Заказать</a>
             </div>
           </article>
       </section>
@@ -323,6 +323,22 @@
         </a>
       </div>
     </footer>
+    <div class="modal">
+      <h3 class="modal__heading">Добавить в корзину</h3>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <span class="modal__form-description">Выберите размер:</span>
+        <div class="modal__radio-wrapper">
+          <input type="radio" class="modal__input" name="size" id="s" value="s">
+          <label for="s" class="modal__label">S</label>
+          <input type="radio" class="modal__input" name="size" id="m" value="m" checked>
+          <label for="m" class="modal__label">M</label>
+          <input type="radio" class="modal__input" name="size" id="l" value="l">
+          <label for="l" class="modal__label">L</label>
+        </div>
+        <input type="submit" class="modal__submit" type="submit" value="Добавить">
+      </form>
+    </div>
+    <div class="overlay"></div>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/picturefill.min.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEYdfTqxT5MsGL6Tquo20_ZeMMBKb72pA&callback=initMap"></script>
