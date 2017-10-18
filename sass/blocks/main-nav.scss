@@ -115,6 +115,7 @@
     width: 320px;
     background: white;
     top: 79px;
+    left: 0;
   }
 
   .main-nav__list--user-block-js {
@@ -164,6 +165,7 @@
     display: flex;
     justify-content: center;
     border: none;
+    white-space: nowrap;
   }
 
   .main-nav__toggle {
@@ -181,7 +183,7 @@
 
   .main-nav__list--navigation {
     order: 2;
-    width: 303px;
+    width: 350px;
     justify-content: space-between;
     background: transparent;
     border-bottom: none;
