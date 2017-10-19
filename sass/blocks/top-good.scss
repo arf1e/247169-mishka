@@ -146,7 +146,7 @@
 
 @media (min-width: $desktop-width) {
   .top-good {
-    width: 825px;
+    width: 875px;
     margin-left: 175px;
     position: relative;
     flex-wrap: wrap;
@@ -156,6 +156,7 @@
     overflow: visible;
     max-height: 636px;
     padding-top: 50px;
+    height: 636px;
   }
 
   .top-good__name {
@@ -210,6 +211,10 @@
 
   .top-good__picture-container {
     order: 4;
+    width: 525px;
+    height: 636px;
+    flex-shrink: 0;
+    display: inline-flex;
   }
 
   .top-good__picture {
@@ -217,5 +222,8 @@
     height: 636px;
     background: lightgrey;
     z-index: 1;
+    margin-right: 0;
+    margin-left: auto;
+    flex-shrink: 0;
   }
 }

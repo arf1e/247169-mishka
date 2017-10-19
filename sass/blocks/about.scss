@@ -125,12 +125,14 @@
     margin-top: 0;
   }
 
-  /* Порядок следования : */
-
   .about__advantage--ecology {
     order: 1;
     max-width: 220px;
     padding-right: 114px;
+  }
+
+  .about__text--ecology {
+    max-width: 220px;
   }
 
   .about__advantage--handmade {
@@ -139,14 +141,26 @@
     order: 2;
   }
 
+  .about__text--handmade {
+    max-width: 250px;
+  }
+
   .about__advantage--cheap {
     max-width: 240px;
     padding-right: 94px;
     order: 3;
   }
 
+  .about__text--cheap {
+    max-width: 240px;
+  }
+
   .about__advantage--local {
     order: 4;
+  }
+
+  .about__text--local {
+    max-width: 100%;
   }
 
   .about__advantage--likes {
@@ -155,10 +169,18 @@
     order: 5;
   }
 
+  .about__text--likes {
+    max-width: 230px;
+  }
+
   .about__advantage--presentable {
     max-width: 250px;
     padding-right: 84px;
     order: 6;
+  }
+
+  .about__text--presentable {
+    max-width: 250px;
   }
 }
 
