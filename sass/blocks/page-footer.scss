@@ -34,11 +34,19 @@
   fill: #46c1ae;
 }
 
+.social__item:active .social__logo {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__logo {
     display: inline-flex;
     flex-basis: 102px;
     margin-bottom: 9px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__link:hover .page-footer__logo {
