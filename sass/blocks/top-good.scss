@@ -154,9 +154,9 @@
     justify-content: flex-start;
     align-items: stretch;
     overflow: visible;
-    max-height: 636px;
     padding-top: 50px;
-    height: 636px;
+    height: 630px;
+    min-height: 636px;
   }
 
   .top-good__name {
