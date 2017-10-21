@@ -23,7 +23,7 @@
           </a>
           <button class="main-nav__toggle" type="button"><span class="toggler toggler--opened"></span></button>
             <ul class="main-nav__list main-nav__list--navigation main-nav__list--navigation-nojs">
-              <li class="main-nav__list-item"><a href="catalog.html" class="main-nav__link main-nav__link--navigation">Каталог товаров</a></li>
+              <li class="main-nav__list-item"><a href="catalog.html" class="main-nav__link main-nav__link--navigation main-nav__link--catalogue">Каталог товаров</a></li>
               <li class="main-nav__list-item"><a href="form.html" class="main-nav__link main-nav__link--navigation main-nav__link--form">Вязание на заказ</a></li>
             </ul>
             <ul class="main-nav__list main-nav__list--user-block main-nav__list--user-block-nojs">
@@ -58,107 +58,108 @@
         </div>
       </section>
       <section class="featured">
-          <article class="top-good">
-            <h3 class="top-good__name">Вязаные корзинки</h3>
-            <span class="top-good__status">Товар недели</span>
-            <div class="top-good__brief">
-              <p class="top-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-              <table class="top-good__info">
-                <tr class="top-good__feature">
-                  <td class="top-good__key">Цвет:</td>
-                  <td class="top-good__value">«Тиффани»/серый</td>
-                </tr>
-                <tr class="top-good__feature">
-                  <td class="top-good__key">Диаметр:</td>
-                  <td class="top-good__value">25 см</td>
-                </tr>
-                <tr class="top-good__feature">
-                  <td class="top-good__key">Высота:</td>
-                  <td class="top-good__value">15 см</td>
-                </tr>
-              </table>
-            </div>
-            <picture class="top-good__picture-container">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="top-good__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
-            </picture>
-            <div class="top-good__proceed">
-              <strong class="top-good__price">Цена: 990 руб.</strong>
-              <a href="product.html" class="btn btn--proceed">Заказать</a>
-            </div>
-          </article>
+        <h2 class="visually-hidden">Популярные товары:</h2>
+        <article class="top-good">
+          <h3 class="top-good__name">Вязаные корзинки</h3>
+          <span class="top-good__status">Товар недели</span>
+          <div class="top-good__brief">
+            <p class="top-good__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="top-good__info">
+              <tr class="top-good__feature">
+                <td class="top-good__key">Цвет:</td>
+                <td class="top-good__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="top-good__feature">
+                <td class="top-good__key">Диаметр:</td>
+                <td class="top-good__value">25 см</td>
+              </tr>
+              <tr class="top-good__feature">
+                <td class="top-good__key">Высота:</td>
+                <td class="top-good__value">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <picture class="top-good__picture-container">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="top-good__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
+          </picture>
+          <div class="top-good__proceed">
+            <strong class="top-good__price">Цена: 990 руб.</strong>
+            <a href="product.html" class="btn btn--proceed">Заказать</a>
+          </div>
+        </article>
       </section>
       <section class="about">
-        <h3 class="about__heading">Коротко о нас:</h3>
+        <h2 class="about__heading">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__advantage about__advantage--ecology">
             <svg class="about__icon about__icon--ecology" width="32" height="38" >
               <use xlink:href="#icon-feature-flower"></use>
             </svg>
-            <span class="about__text">Экологически чистые материалы</span>
+            <span class="about__text about__text--ecology">Экологически чистые материалы</span>
           </li>
           <li class="about__advantage about__advantage--cheap">
             <svg class="about__icon about__icon--cheap" width="47" height="27">
               <use xlink:href="#icon-feature-money"></use>
             </svg>
-            <span class="about__text">Скандинавский стиль по российской цене</span>
+            <span class="about__text about__text--cheap">Скандинавский стиль по российской цене</span>
           </li>
           <li class="about__advantage about__advantage--likes">
             <svg class="about__icon about__icon--likes" width="33" height="27">
               <use xlink:href="#icon-feature-heart"></use>
             </svg>
-            <span class="about__text">Увеличивает лайки на фотографиях</span>
+            <span class="about__text about__text--likes">Увеличивает лайки на фотографиях</span>
           </li>
           <li class="about__advantage about__advantage--handmade">
             <svg class="about__icon about__icon--handmade" width="35" height="34">
               <use xlink:href="#icon-feature-ball"></use>
             </svg>
-            <span class="about__text">Связано вручную с любовью и умилением</span>
+            <span class="about__text about__text--handmade">Связано вручную с любовью и умилением</span>
           </li>
           <li class="about__advantage about__advantage--local">
             <svg class="about__icon about__icon--local" width="55" height="23">
               <use xlink:href="#icon-feature-rocket"></use>
             </svg>
-            <span class="about__text">Поддержка отечественного производителя</span>
+            <span class="about__text about__text--local">Поддержка отечественного производителя</span>
           </li>
           <li class="about__advantage about__advantage--presentable">
             <svg class="about__icon about__icon--presentable" width="33" height="32">
               <use xlink:href="#icon-feature-gift"></use>
             </svg>
-            <span class="about__text">Поставляется в подарочной упаковке</span>
+            <span class="about__text about__text--presentable">Поставляется в подарочной упаковке</span>
           </li>
         </ul>
       </section>
       <section class="responds">
-          <h3 class="responds__heading">Отзывы</h3>
-          <blockquote class="respond">
-            <p class="respond__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          </blockquote>
-          <div class="respond__info">
-            <strong class="respond__author">Анастасия Красильникова</strong>
-            <span class="respond__author-contacts">@misssssiskras</span>
-          </div>
-          <div class="responds__controls">
-            <a href="#" class="responds__control-btn responds__control-btn--prev">
-              <svg class="responds__icon" x="0px" y="0px" width="50px" height="26.003px">
-                <use xlink:href="#icon-left-arrow"></use>
-              </svg>
-            </a>
-            <a href="#" class="responds__control-btn responds__control-btn--next">
-              <svg class="responds__icon" width="50px" height="26.003px">
-                <use xlink:href="#icon-right-arrow"></use>
-              </svg>
-            </a>
-          </div>
-          <a href="#" class="responds__write btn">Написать</a>
+        <h2 class="responds__heading">Отзывы</h2>
+        <blockquote class="respond">
+          <p class="respond__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        </blockquote>
+        <div class="respond__info">
+          <strong class="respond__author">Анастасия Красильникова</strong>
+          <span class="respond__author-contacts">@misssssiskras</span>
+        </div>
+        <div class="responds__controls">
+          <a href="#" class="responds__control-btn responds__control-btn--prev">
+            <svg class="responds__icon" x="0px" y="0px" width="50px" height="26.003px">
+              <use xlink:href="#icon-left-arrow"></use>
+            </svg>
+          </a>
+          <a href="#" class="responds__control-btn responds__control-btn--next">
+            <svg class="responds__icon" width="50px" height="26.003px">
+              <use xlink:href="#icon-right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <a href="#" class="responds__write btn">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrap">
-          <h3 class="contacts__heading">Контакты</h3>
+          <h2 class="contacts__heading">Контакты</h2>
           <svg class="contacts__icon" width="46.68px" height="81.691px">
             <use xlink:href="#icon-flag"></use>
           </svg>
@@ -185,6 +186,7 @@
         <ul class="page-footer__social social">
           <li class="social__item social__item--instagram">
             <a href="#" class="page-footer__social-link">
+              <span class="visually-hidden">Инстаграм:</span>
               <svg class="social__logo social__logo--instagram" width="21.769px" height="21.334px">
                 <use xlink:href="#icon-insta"></use>
               </svg>
@@ -192,6 +194,7 @@
           </li>
           <li class="social__item social__item--fb">
             <a href="#" class="page-footer__social-link">
+              <span class="visually-hidden">Фейсбук:</span>
               <svg class="social__logo social__logo--fb" width="14.962px" height="27.718px">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -199,6 +202,7 @@
           </li>
           <li class="social__item social__item--twitter">
             <a href="#" class="page-footer__social-link">
+              <span class="visually-hidden">Твиттер:</span>
               <svg class="social__logo social__logo--twitter" width="23.494px" height="20.168px">
                 <use xlink:href="#icon-twitter"></use>
               </svg>

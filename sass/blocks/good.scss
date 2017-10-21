@@ -103,6 +103,10 @@
     flex-shrink: 0;
   }
 
+  .good__picture-container {
+    height: 334px;
+  }
+
   .good__description {
     padding: 25px 27px 29px 27px;
     display: flex;
@@ -138,7 +142,7 @@
   }
 
   .good__description {
-    padding: 20px 27px 29px 27px;
+    padding: 25px 27px 29px 27px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
