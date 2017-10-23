@@ -69,31 +69,31 @@
   .top-good {
     padding-top: 55px;
     padding-bottom: 70px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
   }
 
   .top-good__name {
     font-size: $page-heading-tablet-fs;
+    margin-bottom: 59px;
   }
 
   .top-good__status {
-    margin-bottom: 65px;
-    display: inline-flex;
-    width: 55px;
+    width: 90px;
     text-align: center;
-    align-self: flex-end;
-    margin-right: 40px;
+    position: absolute;
+    right: 20px;
   }
 
   .top-good__brief {
     max-width: 290px;
-    margin-top: -12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
 
   .top-good__description {
@@ -107,6 +107,12 @@
     width: 333px;
     height: 404px;
     margin: 0;
+  }
+
+  .top-good__picture-container {
+    position: absolute;
+    right: 0;
+    bottom: 64px;
   }
 
   .top-good__info {
@@ -126,7 +132,6 @@
   }
 
   .top-good__price {
-    margin-top: 50px;
     margin-bottom: 33px;
     font-size: 20px;
     line-height: 24px;
@@ -140,7 +145,6 @@
     width: 290px;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: -168px;
   }
 }
 
@@ -152,30 +156,25 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
     overflow: visible;
     padding-top: 50px;
-    height: 630px;
-    min-height: 636px;
   }
 
   .top-good__name {
     font-size: $page-heading-desktop-fs;
     line-height: 57px;
-    max-width: 290px; /* Ширина блока с информацией */
-    white-space: nowrap;
-    overflow: visible;
     margin-top: 50px;
     margin-left: -3px;
-    margin-bottom: 62px;
+    margin-bottom: 50px;
     order: 1;
     z-index: 2;
   }
 
   .top-good__status {
     position: absolute;
-    top: 118px;
-    left: -129px;
+    top: 115px;
+    left: -138px;
     z-index: 2;
   }
 
@@ -185,6 +184,7 @@
     order: 2;
     margin-right: 60px;
     justify-content: flex-start;
+    margin-bottom: 82px;
   }
 
   .top-good__description {
@@ -196,7 +196,6 @@
   }
 
   .top-good__proceed {
-    margin-top: 85px;
     order: 3;
     display: flex;
     justify-content: flex-start;
@@ -206,15 +205,13 @@
 
   .top-good__price {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .top-good__picture-container {
-    order: 4;
     width: 525px;
     height: 636px;
-    flex-shrink: 0;
-    display: inline-flex;
+    bottom: 70px;
   }
 
   .top-good__picture {
